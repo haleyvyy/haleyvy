@@ -2,10 +2,12 @@
   "name": "github-homepage",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://<your-username>.github.io/<repo-name>/",
+  "homepage": "https://haleyvy.github.io/Haleyvy/",
   "scripts": {
-    "start": "webpack serve --mode development --open",
-    "build": "webpack --mode production"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build"
   },
   "dependencies": {
     "react": "^18.3.0",
